@@ -1,0 +1,226 @@
+:root {
+    --corBackGround: #09090b;
+    --corBackSecundaria:#a1a1aa;
+    --corText: #f4f4f5;
+    --corCheck: #bef264;
+    --corTextButton: #1a2e05;
+    --corBorder: #27272a;
+}
+
+
+
+body {
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    background-color: var(--corBackGround);
+    padding: 40px 160px;
+    flex-direction: row;
+     }
+
+input, select {
+    all: unset;
+}
+
+input {
+    border: 0px;
+    background-color: var(--corBackGround) ;
+    color: var(--corText);
+
+}
+
+#formAtividade {
+    height: 250px;
+}
+
+#input1 {
+    border: 1px solid var(--corBorder);
+    width: 270px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    height: 56px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size:40px;
+    color: var(--corBorder);
+    background-color: var(--corBackGround);
+}
+
+#input1 input {
+    font-size: 17px ;
+}
+#input2 {
+    border: 1px solid var(--corBorder);
+    width: 270px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    height: 56px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #FFF;
+
+}
+#input3 {
+    border: 1px solid var(--corBorder);
+    padding-left: 10px;
+    width: 270px;
+    border-radius: 5px;
+    height: 56px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #FFF;
+}
+
+#main {
+    margin-right: 32px;
+    height: 365px;
+    display: flex;
+    flex-direction: column;
+}
+
+#main img {
+    margin-right: 10px;
+}
+
+#main #info {
+    display: flex;
+    align-items: center;
+    background-color: #18181B;
+    width: 270px;
+    font-size: 12px;
+    margin-bottom: 30px;
+    padding-left: 10px;
+    height: 64px;
+    border-radius: 10px;
+    align-items:center ;
+}
+
+#main #info h3 {
+    color: #FFF;
+}
+
+#main #info img {
+    width: 20px;
+    height: 20px;
+}
+
+button {
+    width: 280px ;
+    border-radius: 5px;
+    height: 42px;
+    background-color: #bef264;
+    border: 0px;
+    font-size: 17px;
+    color: var(--corTextButton);
+}
+
+h1 {
+    color: var(--corText);
+    margin: 0px;
+    margin-bottom: 20px;
+}
+
+#form {
+    width: 648px;
+}
+
+.card-bg {
+    background-color: var(--corBorder);
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    height: 20px;
+    align-items: center;
+}
+
+.card-bg span {
+    width: 175px;
+    font-size: 17px;
+}
+
+.card-bg time {
+    color: #a1a1ab;
+    font-size: 12px;
+    
+    margin-left: px;
+    line-height: 10px;
+}
+
+input, select {
+    all: unset;
+  }
+  
+  .card-bg {
+    background: #18181B;
+  
+    box-shadow: 
+      0px 8px 8px rgba(0, 0, 0, 0.1), 
+      0px 4px 4px rgba(0, 0, 0, 0.1), 
+      0px 2px 2px rgba(0, 0, 0, 0.1), 
+      0px 0px 0px 1px rgba(0, 0, 0, 0.1), 
+      inset 0px 0px 0px 1px rgba(255, 255, 255, 0.03), inset 0px 1px 0px rgba(255, 255, 255, 0.03);
+  
+    border-radius: 12px;
+  }
+  section input[type="checkbox"] {
+    position: absolute;
+    inset: 0;
+  }
+  
+  section .card-bg {
+    position: relative;
+    padding: 10px 16px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  section .card-bg:has(:checked) .active,
+  section .card-bg .inactive {
+    display: block;
+  }
+  
+  section .card-bg:has(:checked) .inactive,
+  section .card-bg .active {
+    display: none;
+  }
+  
+  section .card-bg > div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  @media (width <= 375px) {
+    body {
+        height: 100vh;
+        flex-direction: column;
+        justify-content:flex-start;
+        align-items:center;
+    }
+    #main {
+        flex-direction: column;
+        margin-right: 0px;
+        
+    }
+
+    #form {
+        width: 280px;
+    }
+  }
+  
+
+  
+  
+  
+
+
